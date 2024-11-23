@@ -1,0 +1,130 @@
+:root {
+--bg-color: #121212;
+--text-color: #ffffff;
+--accent-color: #8c52ff;
+--card-bg: #2a2a40; 
+    --hover-color: #3a3a55; 
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.container h1 {
+text-align: center;
+color: var(--accent-color);
+font-size: 120 px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif }
+
+.tutor-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 20px;
+}
+
+.tutor-card {
+background-color: var(--card-bg);
+border-radius: 8px;
+padding: 20px;
+width: calc(33.33% - 20px);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tutor-card:hover {
+transform: translateY(-5px);
+background-color: var(--hover-color);
+}
+
+.tutor-photo {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
+.tutor-name {
+font-size: 1.5em;
+margin-bottom: 10px;
+color: var(--accent-color);
+}
+
+.tutor-bio {
+margin-bottom: 15px;
+}
+
+.lesson {
+background-color: rgba(255, 255, 255, 0.05);
+border-radius: 6px;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.lesson-title {
+font-weight: bold;
+color: var(--accent-color);
+}
+
+.book-now {
+background-color: var(--accent-color);
+color: var(--text-color);
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+background-color: #7040d9;
+}
+
+@media (max-width: 768px) {
+  .tutor-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+.tutor-card {
+width: 100%;
+}
+}
+
+/* New styles for Manage Bookings section */
+.manage-bookings {
+background-color: var(--card-bg);
+border-radius: 8px;
+padding: 20px;
+margin-top: 40px;
+}
+
+#viewBookingsBtn {
+display: block;
+margin: 0 auto 20px;
+padding: 10px 20px;
+font-size: 1.1em;
+}
+
+.manage-bookings h2{
+text-align: center;
+font-size: 2.1em;
+}
+
+.manage-bookings label{
+	text-align: center;
+font-size: 2.1em;
+}

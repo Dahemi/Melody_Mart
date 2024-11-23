@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+.product-page {
+            padding: 2rem;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap; /* Allows cards to wrap */
+            justify-content: space-between; /* Space between cards */
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem;
+            flex: 0 0 calc(33.33% - 2rem); /* 3 cards per row with margin */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional shadow for depth */
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h2 {
+            color: #333;
+        }
+
+        .product-info p {
+            color: #666;
+        }
+
+        .product-price {
+            font-size: 2rem; /* Increased font size for the price */
+            font-weight: bold;
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        .availability {
+            color: green; /* Availability color */
+            font-weight: bold;
+        }
+
+        .form-container {
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: black; /* Change input text color to black */
+        }
+
+        .form-group button {
+            background-color: #6200ee;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #4b00bb;
+        }
+
+        .slider {
+            max-width: 1000px;
+            margin: 2rem auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 2rem;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .slider-nav.left {
+            left: 10px;
+        }
+
+        .slider-nav.right {
+            right: 10px;
+        }
+
+        .conclusion {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f0f0f0;
+        }
+
+        .conclusion h2 {
+            color: #333;
+        }
+
+        .conclusion p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .conclusion a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #6200ee;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .conclusion a:hover {
+            background-color: #4b00bb;
+        }
+        
+        .slider {
+            max-width: 1000px;
+            margin: 2rem auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 2rem;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .slider-nav.left {
+            left: 10px;
+        }
+
+        .slider-nav.right {
+            right: 10px;
+        }

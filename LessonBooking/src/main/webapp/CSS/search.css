@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Center content and make the search results attractive */
+.results-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.product-list li img {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.product-list li strong {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-list li p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Center entire section */
+h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 30px;
+}

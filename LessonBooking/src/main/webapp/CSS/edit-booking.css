@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #1a0e2e;
+    --secondary-color: #2d1a4a;
+    --accent-color: #9b4dca;
+    --text-color: #ffffff;
+    --background-color: #1a0e2e;
+    --card-bg: #1e1e1e;
+    --hover-color: #2c2c2c;
+    --success-color: #4CAF50;
+    --error-color: #ff4d4d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .container {
+    min-height: calc(100vh - 200px); /* Adjust based on your header and footer height */
+    justify-content: center;
+}
+
+.form-container {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--hover-color);
+    background-color: white;
+    color: 000000;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #7040d9;
+}
+
+.back-button {
+    background-color: #2c2c2c;
+    color: var(--text-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.back-button:hover {
+    background-color: #3a3a3a;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success {
+    background-color: var(--success-color);
+    color: var(--text-color);
+}
+
+.error {
+    background-color: var(--error-color);
+    color: var(--text-color);
+}
+
